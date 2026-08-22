@@ -2,49 +2,47 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Удобный · 28–32 000 ₽ — Fatima</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<title>Fatima — Удобный · ~28–32 000 ₽</title>
 <style>
-:root{--bg:#1a1512;--card:#2a231e;--text:#f5f0e8;--muted:#a89a8c;--gold:#c9a66b;--gold2:#e8d5b5;--line:rgba(201,166,107,.2);--serif:"Cormorant Garamond",serif;--sans:Manrope,sans-serif}
+:root{--bg:#1a1512;--card:#2a231e;--text:#f5f0e8;--muted:#a89a8c;--gold:#c9a66b;--gold2:#e8d5b5;--line:rgba(201,166,107,.22)}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.5}
+body{font-family:Manrope,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;padding-bottom:88px}
 a{color:inherit;text-decoration:none}
-.wrap{width:min(1000px,calc(100% - 28px));margin:0 auto;padding:20px 0 100px}
-.badge{display:inline-block;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:#1a1512;background:var(--gold);padding:5px 10px;border-radius:3px;margin-bottom:12px}
-h1{font-family:var(--serif);font-size:2rem;font-weight:400}
-.sub{color:var(--muted);margin:6px 0 8px}
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 20px}
-.chip{padding:8px 12px;border:1px solid var(--line);border-radius:20px;font-size:.8rem;color:var(--muted)}
+.wrap{width:min(480px,calc(100% - 28px));margin:0 auto;padding:20px 0}
+.badge{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--gold);color:#1a1512;padding:6px 10px;border-radius:4px;margin-bottom:12px}
+h1{font-family:"Cormorant Garamond",serif;font-size:1.85rem;font-weight:400}
+.sub{color:var(--muted);font-size:.88rem;margin:6px 0 14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.chip{font-size:.78rem;padding:8px 12px;border-radius:20px;border:1px solid var(--line);color:var(--muted)}
 .chip.on{border-color:var(--gold);color:var(--gold2)}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-@media(min-width:640px){.grid{grid-template-columns:repeat(3,1fr)}}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.ph{aspect-ratio:3/4;background:linear-gradient(145deg,#40362e,#2a231e);display:grid;place-items:center;color:var(--muted);font-size:.75rem;position:relative}
-.tag{position:absolute;top:8px;left:8px;font-size:.65rem;background:rgba(26,21,18,.8);color:var(--gold);padding:3px 7px;border-radius:3px}
-.body{padding:12px 12px 14px}
-.body h3{font-size:.92rem;margin-bottom:4px}
-.sizes{font-size:.75rem;color:var(--muted);margin-bottom:6px}
-.sizes b{color:var(--text);font-weight:500}
-.row{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
-.wa{font-size:.72rem;font-weight:600;padding:8px 11px;background:var(--gold);color:#1a1512;border-radius:4px}
-.box{margin-top:28px;padding:18px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
-.box h3{font-family:var(--serif);font-size:1.2rem;color:var(--gold2);margin-bottom:8px}
-.box li{list-style:none;font-size:.88rem;color:var(--muted);padding:3px 0 3px 12px;position:relative}
-.box li::before{content:"·";position:absolute;left:0;color:var(--gold)}
-.sticky{position:fixed;bottom:0;left:0;right:0;padding:12px 16px;background:rgba(26,21,18,.95);border-top:1px solid var(--line)}
-.sticky a{display:block;text-align:center;background:var(--gold);color:#1a1512;font-weight:700;padding:14px;border-radius:4px}
-.note{margin-top:20px;font-size:.78rem;color:var(--muted)}
+.ph{aspect-ratio:3/4;background:linear-gradient(150deg,#40362e,#2a231e);display:grid;place-items:center;color:var(--muted);font-size:.75rem}
+.bd{padding:12px}
+.bd h3{font-size:.88rem;margin-bottom:4px}
+.meta{font-size:.72rem;color:var(--muted);margin-bottom:10px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.price{font-size:.8rem;font-weight:600;color:var(--gold2)}
+.wa{font-size:.7rem;font-weight:700;padding:7px 10px;background:var(--gold);color:#1a1512;border-radius:4px;white-space:nowrap}
+.del{margin-top:22px;padding:16px;background:var(--card);border:1px solid var(--line);border-radius:10px}
+.del h3{font-family:"Cormorant Garamond",serif;font-size:1.2rem;color:var(--gold2);margin-bottom:8px;font-weight:400}
+.del li{list-style:none;font-size:.86rem;color:var(--muted);padding:4px 0 4px 12px;position:relative}
+.del li::before{content:"·";position:absolute;left:0;color:var(--gold)}
+.sticky{position:fixed;bottom:0;left:0;right:0;padding:12px 16px;background:rgba(26,21,18,.96);border-top:1px solid var(--line)}
+.sticky a{display:block;text-align:center;background:var(--gold);color:#1a1512;font-weight:700;padding:14px;border-radius:6px}
+.note{margin-top:20px;font-size:.78rem;color:var(--muted);line-height:1.45}
+.note b{color:var(--text)}
 </style>
 </head>
 <body>
 <div class="wrap">
-<span class="badge">Пакет УДОБНЫЙ · 28–32 000 ₽</span>
+<span class="badge">Удобный · 28–32 000 ₽</span>
 <h1>Fatima Pakhrudinova</h1>
-<p class="sub">Каталог с размерами · доставка · самовывоз</p>
-<div class="filters">
+<p class="sub">Каталог · доставка · самовывоз</p>
+<div class="chips">
   <span class="chip on">Все</span>
   <span class="chip">Абая</span>
   <span class="chip">Платья</span>
@@ -52,25 +50,116 @@ h1{font-family:var(--serif);font-size:2rem;font-weight:400}
   <span class="chip">Хиджабы</span>
 </div>
 <div class="grid">
-  <article class="card"><div class="ph"><span class="tag">Абая</span>Фото</div><div class="body"><h3>Модель 1</h3><p class="sizes">Размеры: <b>42–54</b> · цвет на выбор</p><div class="row"><span style="color:var(--gold2);font-weight:600">по запросу</span><a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%201%2C%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%20">Заказать</a></div></div></article>
-  <article class="card"><div class="ph"><span class="tag">Платье</span>Фото</div><div class="body"><h3>Модель 2</h3><p class="sizes">Размеры: <b>42–54</b> · цвет на выбор</p><div class="row"><span style="color:var(--gold2);font-weight:600">по запросу</span><a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%202%2C%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%20">Заказать</a></div></div></article>
-  <article class="card"><div class="ph"><span class="tag">Комплект</span>Фото</div><div class="body"><h3>Модель 3</h3><p class="sizes">Размеры: <b>42–54</b> · цвет на выбор</p><div class="row"><span style="color:var(--gold2);font-weight:600">по запросу</span><a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%203%2C%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%20">Заказать</a></div></div></article>
-  <article class="card"><div class="ph"><span class="tag">Хиджаб</span>Фото</div><div class="body"><h3>Модель 4</h3><p class="sizes">Размеры: <b>42–54</b> · цвет на выбор</p><div class="row"><span style="color:var(--gold2);font-weight:600">по запросу</span><a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%204%2C%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%20">Заказать</a></div></div></article>
-  <article class="card"><div class="ph"><span class="tag">Абая</span>Фото</div><div class="body"><h3>Модель 5</h3><p class="sizes">Размеры: <b>42–54</b> · цвет на выбор</p><div class="row"><span style="color:var(--gold2);font-weight:600">по запросу</span><a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%205%2C%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%20">Заказать</a></div></div></article>
-  <article class="card"><div class="ph"><span class="tag">Платье</span>Фото</div><div class="body"><h3>Модель 6</h3><p class="sizes">Размеры: <b>42–54</b> · цвет на выбор</p><div class="row"><span style="color:var(--gold2);font-weight:600">по запросу</span><a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%206%2C%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%20">Заказать</a></div></div></article>
-  <article class="card"><div class="ph"><span class="tag">Комплект</span>Фото</div><div class="body"><h3>Модель 7</h3><p class="sizes">Размеры: <b>42–54</b> · цвет на выбор</p><div class="row"><span style="color:var(--gold2);font-weight:600">по запросу</span><a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%207%2C%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%20">Заказать</a></div></div></article>
-  <article class="card"><div class="ph"><span class="tag">Хиджаб</span>Фото</div><div class="body"><h3>Модель 8</h3><p class="sizes">Размеры: <b>42–54</b> · цвет на выбор</p><div class="row"><span style="color:var(--gold2);font-weight:600">по запросу</span><a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%208%2C%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%20">Заказать</a></div></div></article>
-  <article class="card"><div class="ph"><span class="tag">Абая</span>Фото</div><div class="body"><h3>Модель 9</h3><p class="sizes">Размеры: <b>42–54</b> · цвет на выбор</p><div class="row"><span style="color:var(--gold2);font-weight:600">по запросу</span><a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%209%2C%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%80%20">Заказать</a></div></div></article>
+<article class="card">
+  <div class="ph">Ваше фото</div>
+  <div class="bd">
+    <h3>Абая классическая</h3>
+    <p class="meta">42–54 · 4 цвета</p>
+    <div class="row">
+      <span class="price">по запросу</span>
+      <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20Абая классическая">Заказать</a>
+    </div>
+  </div>
+</article>
+<article class="card">
+  <div class="ph">Ваше фото</div>
+  <div class="bd">
+    <h3>Абая с поясом</h3>
+    <p class="meta">42–52 · чёрный, графит</p>
+    <div class="row">
+      <span class="price">по запросу</span>
+      <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20Абая с поясом">Заказать</a>
+    </div>
+  </div>
+</article>
+<article class="card">
+  <div class="ph">Ваше фото</div>
+  <div class="bd">
+    <h3>Платье длинное</h3>
+    <p class="meta">42–50 · 3 цвета</p>
+    <div class="row">
+      <span class="price">по запросу</span>
+      <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20Платье длинное">Заказать</a>
+    </div>
+  </div>
+</article>
+<article class="card">
+  <div class="ph">Ваше фото</div>
+  <div class="bd">
+    <h3>Платье на выход</h3>
+    <p class="meta">44–52 · бежевый</p>
+    <div class="row">
+      <span class="price">по запросу</span>
+      <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20Платье на выход">Заказать</a>
+    </div>
+  </div>
+</article>
+<article class="card">
+  <div class="ph">Ваше фото</div>
+  <div class="bd">
+    <h3>Комплект 2 предмета</h3>
+    <p class="meta">42–52</p>
+    <div class="row">
+      <span class="price">по запросу</span>
+      <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20Комплект 2 предмета">Заказать</a>
+    </div>
+  </div>
+</article>
+<article class="card">
+  <div class="ph">Ваше фото</div>
+  <div class="bd">
+    <h3>Комплект 3 предмета</h3>
+    <p class="meta">42–50</p>
+    <div class="row">
+      <span class="price">по запросу</span>
+      <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20Комплект 3 предмета">Заказать</a>
+    </div>
+  </div>
+</article>
+<article class="card">
+  <div class="ph">Ваше фото</div>
+  <div class="bd">
+    <h3>Хиджаб шифон</h3>
+    <p class="meta">оттенки в наличии</p>
+    <div class="row">
+      <span class="price">по запросу</span>
+      <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20Хиджаб шифон">Заказать</a>
+    </div>
+  </div>
+</article>
+<article class="card">
+  <div class="ph">Ваше фото</div>
+  <div class="bd">
+    <h3>Хиджаб трикотаж</h3>
+    <p class="meta">базовый</p>
+    <div class="row">
+      <span class="price">по запросу</span>
+      <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20Хиджаб трикотаж">Заказать</a>
+    </div>
+  </div>
+</article>
+<article class="card">
+  <div class="ph">Ваше фото</div>
+  <div class="bd">
+    <h3>Новинка сезона</h3>
+    <p class="meta">уточняйте в WhatsApp</p>
+    <div class="row">
+      <span class="price">по запросу</span>
+      <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20Новинка сезона">Заказать</a>
+    </div>
+  </div>
+</article>
+
 </div>
-<div class="box">
+<div class="del">
   <h3>Доставка и самовывоз</h3>
   <ul>
     <li>Самовывоз: ул. Толстого, 17 · 10:00–19:00</li>
     <li>Доставка по Махачкале — по договорённости</li>
-    <li>В WhatsApp уточняем размер и наличие</li>
+    <li>Размер и наличие — в WhatsApp</li>
   </ul>
 </div>
-<p class="note">В пакете: фильтры, размеры на карточках, больше товаров, блок доставки. Меньше вопросов «а есть 46?»</p>
+<p class="note"><b>Что входит:</b> всё из «Каталога» + больше позиций на сайте, быстрые категории сверху, блок доставки/самовывоза, удобнее структура для покупателя.<br><br>Правки и помощь с доменом — как и в остальных вариантах.</p>
 </div>
 <div class="sticky"><a href="https://wa.me/79898910620?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5">Заказать в WhatsApp</a></div>
 </body>
