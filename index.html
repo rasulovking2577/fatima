@@ -2,274 +2,391 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Fatima Pakhrudinova — исламская женская одежда | Махачкала</title>
-<meta name="description" content="Исламская женская одежда в Махачкале. Абая, платья, комплекты, хиджабы. ул. Толстого, 17. Заказ в WhatsApp.">
-<meta name="theme-color" content="#120f0d">
+<meta name="description" content="Исламская женская одежда в Махачкале. Абая, платья, комплекты, хиджабы. ул. Толстого, 17. Заказ в WhatsApp +7 989 891-06-20.">
+<meta name="theme-color" content="#0e0c0a">
+<meta property="og:title" content="Fatima Pakhrudinova — исламская женская одежда">
+<meta property="og:description" content="Абая, платья, комплекты. Махачкала, ул. Толстого, 17. Заказ в WhatsApp.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#120f0d;
-  --bg2:#1a1613;
-  --card:#221d19;
-  --text:#f6f1e9;
+  --bg:#0e0c0a;
+  --bg2:#161310;
+  --card:#1f1a16;
+  --text:#f7f2ea;
   --muted:#9a8b7c;
   --gold:#c9a66b;
   --gold2:#e8d5b5;
-  --line:rgba(201,166,107,.2);
+  --line:rgba(201,166,107,.18);
   --serif:"Cormorant Garamond",Georgia,serif;
   --sans:Manrope,system-ui,sans-serif;
+  --r:14px;
+  --ease:cubic-bezier(.22,1,.36,1);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 body{
   font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.55;
-  -webkit-font-smoothing:antialiased;padding-bottom:88px;
-  background-image:radial-gradient(ellipse 80% 45% at 50% -5%,rgba(201,166,107,.08),transparent 50%);
+  -webkit-font-smoothing:antialiased;padding-bottom:92px;
+  background-image:
+    radial-gradient(ellipse 100% 60% at 50% -20%,rgba(201,166,107,.12),transparent 55%),
+    radial-gradient(ellipse 40% 30% at 100% 40%,rgba(80,55,30,.12),transparent 50%);
 }
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%;height:auto}
-.wrap{width:min(980px,calc(100% - 28px));margin:0 auto}
+.wrap{width:min(1000px,calc(100% - 28px));margin:0 auto}
 
+/* header */
 .hd{
-  position:sticky;top:0;z-index:40;
+  position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:50;
+  width:min(960px,calc(100% - 20px));
   display:flex;align-items:center;justify-content:space-between;
-  padding:14px 0;
-  background:rgba(18,15,13,.92);backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--line);
+  padding:10px 10px 10px 18px;border-radius:999px;
+  background:rgba(14,12,10,.82);backdrop-filter:blur(16px) saturate(1.2);
+  border:1px solid var(--line);
+  box-shadow:0 8px 32px rgba(0,0,0,.35);
 }
-.logo{font-family:var(--serif);font-size:1.2rem;font-weight:600;letter-spacing:.02em}
+.logo{font-family:var(--serif);font-size:1.15rem;font-weight:600;letter-spacing:.02em}
 .logo em{font-style:italic;color:var(--gold);font-weight:400}
 .hd-cta{
-  font-size:.75rem;font-weight:700;padding:10px 16px;border-radius:999px;
-  background:var(--gold);color:#120f0d;
+  font-size:.75rem;font-weight:700;padding:11px 16px;border-radius:999px;
+  background:linear-gradient(180deg,#e0c9a0,#c9a66b);color:#0e0c0a;
+  box-shadow:0 0 20px rgba(201,166,107,.25);
 }
 
-.hero{padding:48px 0 40px;text-align:center}
-.hero .tag{
-  font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--muted);margin-bottom:14px;
+/* hero */
+.hero{padding:110px 0 48px;text-align:center}
+.tag{
+  display:inline-block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold);border:1px solid var(--line);padding:6px 12px;border-radius:999px;margin-bottom:18px;
 }
 .hero h1{
   font-family:var(--serif);font-weight:400;
-  font-size:clamp(2.2rem,6.5vw,3.2rem);line-height:1.1;
-  margin-bottom:14px;letter-spacing:-.02em;
+  font-size:clamp(2.35rem,7vw,3.5rem);line-height:1.08;
+  margin-bottom:14px;letter-spacing:-.025em;
 }
 .hero h1 em{font-style:italic;color:var(--gold2)}
-.hero p{color:var(--muted);max-width:34ch;margin:0 auto 26px;font-size:1.02rem}
+.hero p{color:var(--muted);max-width:36ch;margin:0 auto 28px;font-size:1.05rem}
 .acts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
 .btn{
-  display:inline-flex;align-items:center;justify-content:center;
-  min-height:48px;padding:0 22px;font-weight:700;font-size:.9rem;border-radius:999px;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:50px;padding:0 24px;font-weight:700;font-size:.9rem;border-radius:999px;
+  transition:transform .2s var(--ease),box-shadow .2s;
 }
-.btn-m{background:var(--gold);color:#120f0d}
-.btn-g{border:1px solid var(--line);background:transparent}
+.btn:active{transform:scale(.98)}
+.btn-m{
+  background:linear-gradient(180deg,#e0c9a0,#c9a66b);color:#0e0c0a;
+  box-shadow:0 0 28px rgba(201,166,107,.3),0 8px 20px rgba(0,0,0,.25);
+}
+.btn-g{border:1px solid var(--line);background:rgba(255,255,255,.03)}
 
-.sec{padding:40px 0}
+/* sections */
+.sec{padding:44px 0}
 .sec h2{
-  font-family:var(--serif);font-size:clamp(1.5rem,4vw,2rem);
+  font-family:var(--serif);font-size:clamp(1.55rem,4vw,2.1rem);
   font-weight:400;text-align:center;margin-bottom:8px;
 }
-.sec .s{text-align:center;color:var(--muted);margin-bottom:24px;font-size:.92rem}
+.sec .s{text-align:center;color:var(--muted);margin-bottom:26px;font-size:.95rem}
 
-.cats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:28px}
-@media(min-width:600px){.cats{grid-template-columns:repeat(4,1fr)}}
-.cat{
-  text-align:center;padding:20px 12px;
-  background:var(--card);border:1px solid var(--line);border-radius:12px;
-  font-family:var(--serif);font-size:1.15rem;transition:border-color .2s;
+.about{
+  max-width:520px;margin:0 auto;text-align:center;
+  padding:22px 20px;border-radius:var(--r);
+  background:rgba(31,26,22,.7);border:1px solid var(--line);
 }
-.cat:active{border-color:var(--gold)}
+.about p{color:var(--muted);font-size:.95rem}
 
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-@media(min-width:720px){.grid{grid-template-columns:repeat(3,1fr)}}
+/* categories */
+.cats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:28px}
+@media(min-width:640px){.cats{grid-template-columns:repeat(4,1fr)}}
+.cat{
+  position:relative;aspect-ratio:1.1;border-radius:var(--r);overflow:hidden;
+  border:1px solid var(--line);display:flex;align-items:flex-end;padding:16px;
+  background:linear-gradient(165deg,#2a2420 0%,#161310 100%);
+  font-family:var(--serif);font-size:1.2rem;transition:border-color .25s,transform .25s var(--ease);
+}
+.cat::before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 40%,rgba(10,8,6,.75));
+  pointer-events:none;
+}
+.cat span{position:relative;z-index:1}
+.cat:hover{border-color:rgba(201,166,107,.4);transform:translateY(-2px)}
+
+/* products */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(min-width:720px){.grid{grid-template-columns:repeat(3,1fr);gap:16px}}
 .card{
-  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
   overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .3s var(--ease),border-color .3s,box-shadow .3s;
+}
+.card:hover{
+  transform:translateY(-4px);border-color:rgba(201,166,107,.35);
+  box-shadow:0 16px 40px rgba(0,0,0,.4);
 }
 .ph{
   aspect-ratio:3/4;background:var(--bg2);position:relative;overflow:hidden;
 }
-.ph img{width:100%;height:100%;object-fit:cover}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.card:hover .ph img{transform:scale(1.04)}
 .ph .pl{
   position:absolute;inset:0;display:grid;place-items:center;
   color:var(--muted);font-size:.78rem;
-  background:linear-gradient(155deg,#2e2822,#1a1613);
+  background:
+    radial-gradient(ellipse 50% 40% at 50% 45%,rgba(201,166,107,.08),transparent 70%),
+    linear-gradient(155deg,#2e2822,#161310);
+}
+.badge{
+  position:absolute;top:10px;left:10px;z-index:2;
+  font-size:.65rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:5px 9px;border-radius:999px;background:rgba(14,12,10,.75);
+  color:var(--gold2);border:1px solid var(--line);backdrop-filter:blur(6px);
 }
 .bd{padding:14px;flex:1;display:flex;flex-direction:column}
-.bd h3{font-size:.95rem;font-weight:600;margin-bottom:4px}
-.meta{font-size:.78rem;color:var(--muted);margin-bottom:12px;flex:1}
+.bd h3{font-size:.95rem;font-weight:600;margin-bottom:4px;letter-spacing:-.01em}
+.meta{font-size:.78rem;color:var(--muted);margin-bottom:12px;flex:1;line-height:1.4}
 .row{display:flex;justify-content:space-between;align-items:center;gap:8px}
 .price{font-weight:600;color:var(--gold2);font-size:.88rem}
 .wa{
-  font-size:.74rem;font-weight:700;padding:9px 12px;border-radius:999px;
-  background:var(--gold);color:#120f0d;white-space:nowrap;
+  font-size:.74rem;font-weight:700;padding:9px 13px;border-radius:999px;
+  background:linear-gradient(180deg,#e0c9a0,#c9a66b);color:#0e0c0a;white-space:nowrap;
 }
+
+/* steps + contact */
+.steps{display:grid;gap:10px;margin-top:8px}
+@media(min-width:600px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{
+  padding:18px;border-radius:var(--r);background:var(--card);border:1px solid var(--line);
+}
+.step .n{font-family:var(--serif);font-size:1.4rem;color:var(--gold);margin-bottom:6px}
+.step h3{font-size:.95rem;margin-bottom:4px}
+.step p{font-size:.85rem;color:var(--muted)}
 
 .box{
-  margin-top:28px;padding:20px;background:var(--card);
-  border:1px solid var(--line);border-radius:14px;
+  padding:20px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);
 }
 .box h3{font-family:var(--serif);font-size:1.25rem;color:var(--gold2);margin-bottom:10px;font-weight:400}
-.box li{list-style:none;font-size:.9rem;color:var(--muted);padding:5px 0 5px 14px;position:relative}
+.box p,.box li{font-size:.9rem;color:var(--muted)}
+.box li{list-style:none;padding:5px 0 5px 14px;position:relative}
 .box li::before{content:"";position:absolute;left:0;top:.7em;width:5px;height:5px;border-radius:50%;background:var(--gold)}
-
 .info{display:grid;gap:12px}
 @media(min-width:560px){.info{grid-template-columns:1fr 1fr}}
-.info .box{margin-top:0}
+
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  list-style:none;cursor:pointer;padding:14px 0;font-weight:600;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:48px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--muted);font-weight:400;font-size:1.1rem}
+.faq details[open] summary::after{content:"−"}
+.faq p{padding:0 0 14px;color:var(--muted);font-size:.9rem}
 
 .sticky{
   position:fixed;bottom:0;left:0;right:0;z-index:50;
   padding:12px 16px calc(12px + env(safe-area-inset-bottom));
-  background:rgba(18,15,13,.97);border-top:1px solid var(--line);
+  background:rgba(14,12,10,.96);backdrop-filter:blur(12px);
+  border-top:1px solid var(--line);
 }
 .sticky .btn{width:100%;display:flex}
 
 footer{
-  padding:28px 0 16px;border-top:1px solid var(--line);
+  padding:28px 0 20px;border-top:1px solid var(--line);
   display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;
   font-size:.8rem;color:var(--muted);
 }
-.about-text{max-width:480px;margin:0 auto;text-align:center;color:var(--muted);font-size:.95rem}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.reveal.on{opacity:1;transform:none}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="hd">
-    <a class="logo" href="#">Fatima <em>Pakhrudinova</em></a>
-    <a class="hd-cta" href="https://wa.me/79898910620?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5" target="_blank" rel="noopener">WhatsApp</a>
-  </header>
+<header class="hd">
+  <a class="logo" href="#">Fatima <em>Pakhrudinova</em></a>
+  <a class="hd-cta" href="https://wa.me/79898910620?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5" target="_blank" rel="noopener">WhatsApp</a>
+</header>
 
-  <section class="hero">
-    <p class="tag">Махачкала · ул. Толстого, 17</p>
-    <h1>Исламская женская<br>одежда <em>с достоинством</em></h1>
-    <p>Абая, платья, комплекты и хиджабы. Выберите модель — напишите в WhatsApp. Подскажем размер и наличие.</p>
-    <div class="acts">
-      <a class="btn btn-m" href="#catalog">Смотреть каталог</a>
-      <a class="btn btn-g" href="https://wa.me/79898910620?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5" target="_blank" rel="noopener">Написать</a>
-    </div>
-  </section>
+<main>
+<section class="hero wrap">
+  <p class="tag reveal">Махачкала · ул. Толстого, 17</p>
+  <h1 class="reveal">Исламская женская<br>одежда <em>с достоинством</em></h1>
+  <p class="reveal">Абая, платья, комплекты и хиджабы. Смотрите модели — пишите в WhatsApp. Подскажем размер и наличие.</p>
+  <div class="acts reveal">
+    <a class="btn btn-m" href="#catalog">Смотреть каталог</a>
+    <a class="btn btn-g" href="https://wa.me/79898910620?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5" target="_blank" rel="noopener">Написать нам</a>
+  </div>
+</section>
 
-  <section class="sec">
-    <p class="about-text">Магазин на Толстого, 17. Можно примерить в зале или заказать через сайт — ответим в рабочее время.</p>
-  </section>
+<section class="sec wrap">
+  <div class="about reveal">
+    <p>Магазин на ул. Толстого, 17. Можно примерить в зале или выбрать на сайте и написать — ответим в рабочее время.</p>
+  </div>
+</section>
 
-  <section class="sec" id="catalog">
-    <h2>Каталог</h2>
-    <p class="s">Нажмите «Заказать» — откроется переписка с названием модели</p>
+<section class="sec wrap" id="catalog">
+  <h2 class="reveal">Каталог</h2>
+  <p class="s reveal">Нажмите «Заказать» — откроется WhatsApp с названием модели</p>
 
-    <div class="cats">
-      <a class="cat" href="https://wa.me/79898910620?text=%D0%90%D0%B1%D0%B0%D1%8F" target="_blank" rel="noopener">Абая</a>
-      <a class="cat" href="https://wa.me/79898910620?text=%D0%9F%D0%BB%D0%B0%D1%82%D1%8C%D1%8F" target="_blank" rel="noopener">Платья</a>
-      <a class="cat" href="https://wa.me/79898910620?text=%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D1%8B" target="_blank" rel="noopener">Комплекты</a>
-      <a class="cat" href="https://wa.me/79898910620?text=%D0%A5%D0%B8%D0%B4%D0%B6%D0%B0%D0%B1%D1%8B" target="_blank" rel="noopener">Хиджабы</a>
-    </div>
+  <div class="cats">
+    <a class="cat reveal" href="https://wa.me/79898910620?text=%D0%90%D0%B1%D0%B0%D1%8F" target="_blank" rel="noopener"><span>Абая</span></a>
+    <a class="cat reveal" href="https://wa.me/79898910620?text=%D0%9F%D0%BB%D0%B0%D1%82%D1%8C%D1%8F" target="_blank" rel="noopener"><span>Платья</span></a>
+    <a class="cat reveal" href="https://wa.me/79898910620?text=%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82%D1%8B" target="_blank" rel="noopener"><span>Комплекты</span></a>
+    <a class="cat reveal" href="https://wa.me/79898910620?text=%D0%A5%D0%B8%D0%B4%D0%B6%D0%B0%D0%B1%D1%8B" target="_blank" rel="noopener"><span>Хиджабы</span></a>
+  </div>
 
-    <div class="grid">
-      <article class="card">
-        <div class="ph"><img src="img/product-1.png" alt="Куртка-рубашка серая" width="400" height="533" loading="eager"></div>
-        <div class="bd">
-          <h3>Куртка-рубашка</h3>
-          <p class="meta">Серый · с поясом и карманами</p>
-          <div class="row">
-            <span class="price">по запросу</span>
-            <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20%D0%9A%D1%83%D1%80%D1%82%D0%BA%D0%B0-%D1%80%D1%83%D0%B1%D0%B0%D1%88%D0%BA%D0%B0%20%D1%81%D0%B5%D1%80%D0%B0%D1%8F" target="_blank" rel="noopener">Заказать</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="ph"><div class="pl">Фото скоро</div></div>
-        <div class="bd">
-          <h3>Абая классическая</h3>
-          <p class="meta">Размеры и цвета — в WhatsApp</p>
-          <div class="row">
-            <span class="price">по запросу</span>
-            <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20%D0%90%D0%B1%D0%B0%D1%8F%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F" target="_blank" rel="noopener">Заказать</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="ph"><div class="pl">Фото скоро</div></div>
-        <div class="bd">
-          <h3>Платье длинное</h3>
-          <p class="meta">Повседневное и на выход</p>
-          <div class="row">
-            <span class="price">по запросу</span>
-            <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20%D0%9F%D0%BB%D0%B0%D1%82%D1%8C%D0%B5%20%D0%B4%D0%BB%D0%B8%D0%BD%D0%BD%D0%BE%D0%B5" target="_blank" rel="noopener">Заказать</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="ph"><div class="pl">Фото скоро</div></div>
-        <div class="bd">
-          <h3>Комплект</h3>
-          <p class="meta">2–3 предмета</p>
-          <div class="row">
-            <span class="price">по запросу</span>
-            <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82" target="_blank" rel="noopener">Заказать</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="ph"><div class="pl">Фото скоро</div></div>
-        <div class="bd">
-          <h3>Хиджаб</h3>
-          <p class="meta">Шифон, трикотаж</p>
-          <div class="row">
-            <span class="price">по запросу</span>
-            <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20%D0%A5%D0%B8%D0%B4%D0%B6%D0%B0%D0%B1" target="_blank" rel="noopener">Заказать</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="ph"><div class="pl">Фото скоро</div></div>
-        <div class="bd">
-          <h3>Новинки</h3>
-          <p class="meta">Спросите наличие</p>
-          <div class="row">
-            <span class="price">по запросу</span>
-            <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20%D0%9D%D0%BE%D0%B2%D0%B8%D0%BD%D0%BA%D0%B8" target="_blank" rel="noopener">Заказать</a>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <div class="box">
-      <h3>Как заказать</h3>
-      <ul>
-        <li>Откройте карточку и нажмите «Заказать»</li>
-        <li>Напишите размер и цвет</li>
-        <li>Мы подтвердим наличие</li>
-        <li>Самовывоз: ул. Толстого, 17 · 10:00–19:00</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="sec">
-    <h2>Контакты</h2>
-    <p class="s">+7 989 891-06-20</p>
-    <div class="info">
-      <div class="box">
-        <h3>Адрес</h3>
-        <p style="color:var(--muted);font-size:.9rem">ул. Толстого, 17, 1 этаж<br>Махачкала<br>Ежедневно 10:00–19:00</p>
+  <div class="grid">
+    <article class="card reveal">
+      <div class="ph">
+        <span class="badge">В зале</span>
+        <img src="img/product-1.png" alt="Куртка-рубашка серая с поясом" width="400" height="533" loading="eager">
       </div>
-      <div class="box">
-        <h3>Связь</h3>
-        <p style="color:var(--muted);font-size:.9rem"><a href="tel:+79898910620" style="color:var(--gold2)">+7 989 891-06-20</a><br>WhatsApp — быстрее всего</p>
+      <div class="bd">
+        <h3>Куртка-рубашка</h3>
+        <p class="meta">Серый · пояс · накладные карманы</p>
+        <div class="row">
+          <span class="price">по запросу</span>
+          <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20%D0%9A%D1%83%D1%80%D1%82%D0%BA%D0%B0-%D1%80%D1%83%D0%B1%D0%B0%D1%88%D0%BA%D0%B0%20%D1%81%D0%B5%D1%80%D0%B0%D1%8F" target="_blank" rel="noopener">Заказать</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </article>
 
-  <footer>
-    <span>Fatima Pakhrudinova</span>
-    <span>Махачкала</span>
-  </footer>
-</div>
+    <article class="card reveal">
+      <div class="ph"><div class="pl">Ждём фото</div></div>
+      <div class="bd">
+        <h3>Абая классическая</h3>
+        <p class="meta">Базовая · несколько цветов</p>
+        <div class="row">
+          <span class="price">по запросу</span>
+          <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20%D0%90%D0%B1%D0%B0%D1%8F%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F" target="_blank" rel="noopener">Заказать</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card reveal">
+      <div class="ph"><div class="pl">Ждём фото</div></div>
+      <div class="bd">
+        <h3>Абая с деталями</h3>
+        <p class="meta">На выход · уточняйте наличие</p>
+        <div class="row">
+          <span class="price">по запросу</span>
+          <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20%D0%90%D0%B1%D0%B0%D1%8F%20%D1%81%20%D0%B4%D0%B5%D1%82%D0%B0%D0%BB%D1%8F%D0%BC%D0%B8" target="_blank" rel="noopener">Заказать</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card reveal">
+      <div class="ph"><div class="pl">Ждём фото</div></div>
+      <div class="bd">
+        <h3>Платье длинное</h3>
+        <p class="meta">Повседневное и нарядное</p>
+        <div class="row">
+          <span class="price">по запросу</span>
+          <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20%D0%9F%D0%BB%D0%B0%D1%82%D1%8C%D0%B5%20%D0%B4%D0%BB%D0%B8%D0%BD%D0%BD%D0%BE%D0%B5" target="_blank" rel="noopener">Заказать</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card reveal">
+      <div class="ph"><div class="pl">Ждём фото</div></div>
+      <div class="bd">
+        <h3>Комплект</h3>
+        <p class="meta">2–3 предмета · согласованный образ</p>
+        <div class="row">
+          <span class="price">по запросу</span>
+          <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82" target="_blank" rel="noopener">Заказать</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card reveal">
+      <div class="ph"><div class="pl">Ждём фото</div></div>
+      <div class="bd">
+        <h3>Хиджаб</h3>
+        <p class="meta">Шифон · трикотаж · оттенки</p>
+        <div class="row">
+          <span class="price">по запросу</span>
+          <a class="wa" href="https://wa.me/79898910620?text=%D0%97%D0%B0%D0%BA%D0%B0%D0%B7%3A%20%D0%A5%D0%B8%D0%B4%D0%B6%D0%B0%D0%B1" target="_blank" rel="noopener">Заказать</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="sec wrap">
+  <h2 class="reveal">Как заказать</h2>
+  <p class="s reveal">Три простых шага</p>
+  <div class="steps">
+    <div class="step reveal"><div class="n">01</div><h3>Выберите модель</h3><p>Нажмите «Заказать» на карточке</p></div>
+    <div class="step reveal"><div class="n">02</div><h3>Напишите размер</h3><p>Цвет и наличие уточним в WhatsApp</p></div>
+    <div class="step reveal"><div class="n">03</div><h3>Заберите</h3><p>Самовывоз: Толстого, 17 · 10:00–19:00</p></div>
+  </div>
+</section>
+
+<section class="sec wrap">
+  <h2 class="reveal">Частые вопросы</h2>
+  <p class="s reveal">Коротко по делу</p>
+  <div class="box faq reveal" style="max-width:560px;margin:0 auto">
+    <details>
+      <summary>Можно примерить?</summary>
+      <p>Да, в магазине на ул. Толстого, 17. Ежедневно с 10:00 до 19:00.</p>
+    </details>
+    <details>
+      <summary>Как узнать размер?</summary>
+      <p>Напишите в WhatsApp название модели и нужный размер — ответим по наличию.</p>
+    </details>
+    <details>
+      <summary>Есть доставка?</summary>
+      <p>Самовывоз всегда. Доставка по Махачкале — по договорённости в переписке.</p>
+    </details>
+    <details>
+      <summary>Как оплатить?</summary>
+      <p>Наличные в магазине или перевод — уточним при заказе.</p>
+    </details>
+  </div>
+</section>
+
+<section class="sec wrap">
+  <h2 class="reveal">Контакты</h2>
+  <p class="s reveal">+7 989 891-06-20</p>
+  <div class="info">
+    <div class="box reveal">
+      <h3>Адрес</h3>
+      <p>ул. Толстого, 17, 1 этаж<br>Махачкала<br>Ежедневно 10:00–19:00</p>
+    </div>
+    <div class="box reveal">
+      <h3>Связь</h3>
+      <p><a href="tel:+79898910620" style="color:var(--gold2)">+7 989 891-06-20</a><br>WhatsApp — быстрее всего<br>Отвечаем в рабочие часы</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:24px" class="reveal">
+    <a class="btn btn-m" href="https://wa.me/79898910620?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5" target="_blank" rel="noopener">Открыть WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer class="wrap">
+  <span>Fatima Pakhrudinova</span>
+  <span>Махачкала</span>
+</footer>
 
 <div class="sticky">
-  <a class="btn btn-m" href="https://wa.me/79898910620?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5" target="_blank" rel="noopener">Написать в WhatsApp</a>
+  <a class="btn btn-m" href="https://wa.me/79898910620?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5" target="_blank" rel="noopener">Заказать в WhatsApp</a>
 </div>
+
+<script>
+(function(){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); }
+    });
+  },{threshold:0.12, rootMargin:'0px 0px -20px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+})();
+</script>
 </body>
 </html>
